@@ -1,2 +1,2 @@
 # posts
-Notebooks, code, data and images from Practically Predictable
+Notebooks, code, data and images from Practically Predictable posts.
