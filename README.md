@@ -1,2 +1,2 @@
 # posts
-Notebooks, code, data and images from Practically Predictable practicallypredictable.com
+Notebooks, code, data and images from Practically Predictable
