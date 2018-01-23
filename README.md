@@ -1,2 +1,2 @@
 # posts
-Notebooks, code and images used in Practically Predictable posts.
+Notebooks, code and other resources from Practically Predictable posts.
