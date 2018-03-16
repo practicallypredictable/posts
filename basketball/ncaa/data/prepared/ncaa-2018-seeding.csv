@@ -1,0 +1,65 @@
+region,seed,team
+East,1,Villanova
+East,2,Purdue
+East,3,Texas Tech
+East,4,Wichita St.
+East,5,West Virginia
+East,6,Florida
+East,7,Arkansas
+East,8,Virginia Tech
+East,9,Alabama
+East,10,Butler
+East,11,St. Bonaventure
+East,12,Murray St.
+East,13,Marshall
+East,14,Stephen F. Austin
+East,15,Cal St. Fullerton
+East,16,Radford
+Midwest,1,Kansas
+Midwest,2,Duke
+Midwest,3,Michigan St.
+Midwest,4,Auburn
+Midwest,5,Clemson
+Midwest,6,TCU
+Midwest,7,Rhode Island
+Midwest,8,Seton Hall
+Midwest,9,North Carolina St.
+Midwest,10,Oklahoma
+Midwest,11,Syracuse
+Midwest,12,New Mexico St.
+Midwest,13,College of Charleston
+Midwest,14,Bucknell
+Midwest,15,Iona
+Midwest,16,Penn
+South,1,Virginia
+South,2,Cincinnati
+South,3,Tennessee
+South,4,Arizona
+South,5,Kentucky
+South,6,Miami (Fla.)
+South,7,Nevada
+South,8,Creighton
+South,9,Kansas St.
+South,10,Texas
+South,11,Loyola Chicago
+South,12,Davidson
+South,13,Buffalo
+South,14,Wright St.
+South,15,Georgia St.
+South,16,Maryland Baltimore County
+West,1,Xavier
+West,2,North Carolina
+West,3,Michigan
+West,4,Gonzaga
+West,5,Ohio St.
+West,6,Houston
+West,7,Texas A&M
+West,8,Missouri
+West,9,Florida St.
+West,10,Providence
+West,11,San Diego St.
+West,12,South Dakota St.
+West,13,UNC Greensboro
+West,14,Montana
+West,15,Lipscomb
+West,16,Texas Southern
