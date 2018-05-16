@@ -12,17 +12,25 @@ class SimpleNBAElo(elo.Updater):
             calculator=elo.LogisticCalculator(),
             multiplier=elo.ConstantMultiplier(constant=20)
         )
-        self.reg_hca = regular_season_hca
-        self.post_hca = playoff_hca
+        self._reg_hca = regular_season_hca
+        self._post_hca = playoff_hca
+    
+    @property
+    def regular_season_hca(self):
+        return self._reg_hca
+    
+    @property
+    def playoff_hca(self):
+        return self._post_hca
 
     def update(self, *, game_type, home_team, outcome, elo1, elo2):
         """Update Elo ratings"""
         if outcome == elo.MatchOutcome.DRAW:
             raise ValueError('no draws in basketball')
         if game_type == self.GameType.REGULAR:
-            hca = self.reg_hca
+            hca = self.regular_season_hca
         elif game_type == self.GameType.PLAYOFF:
-            hca = self.post_hca
+            hca = self.playoff_hca
         else:
             raise ValueError('invalid game type', game_type)
         if home_team == 1:
