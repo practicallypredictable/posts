@@ -24,8 +24,7 @@ def playoff_outcomes(*, best_of, hca_wins):
         yes = best_of - no
     wins = 'Y'*yes + 'N'*no
     raw_outcomes = set(outcome for outcome in itertools.permutations(wins))
-    outcomes = {
+    return [
         valid_series(outcome, best_of=best_of, hca_wins=hca_wins)
         for outcome in raw_outcomes
-    }
-    return outcomes
+    ]
