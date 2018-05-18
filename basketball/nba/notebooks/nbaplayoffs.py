@@ -1,4 +1,4 @@
-import collections
+import itertools
 
 def last_index(outcome, c):
     """Index of last occurrence of an item in a list or tuple"""
