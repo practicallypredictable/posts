@@ -1,11 +1,12 @@
 from enum import Enum, auto
 from pracpred.ratings import elo
 
-class SimpleNBAElo(elo.Updater):
+class GameType(Enum):
+    REGULAR = auto()
+    PLAYOFF = auto()
+
+class SimpleElo(elo.Updater):
     """Simple Elo ratings for NBA teams"""
-    class GameType(Enum):
-        REGULAR = auto()
-        PLAYOFF = auto()
 
     def __init__(self, *, regular_season_hca=69, playoff_hca=93):
         super().__init__(
@@ -27,9 +28,9 @@ class SimpleNBAElo(elo.Updater):
         """Update Elo ratings"""
         if outcome == elo.MatchOutcome.DRAW:
             raise ValueError('no draws in basketball')
-        if game_type == self.GameType.REGULAR:
+        if game_type == GameType.REGULAR:
             hca = self.regular_season_hca
-        elif game_type == self.GameType.PLAYOFF:
+        elif game_type == GameType.PLAYOFF:
             hca = self.playoff_hca
         else:
             raise ValueError('invalid game type', game_type)
